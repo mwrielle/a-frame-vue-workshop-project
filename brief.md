@@ -1,2 +1,0 @@
-- Trouver des pièces dans un univers dans un temps imparti
-- Univers : petite ville
