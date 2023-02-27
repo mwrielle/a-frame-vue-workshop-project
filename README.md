@@ -23,12 +23,12 @@ git clone https://github.com/Chabloz/a-frame-vite-vue-boilerplate.git .
 
 ### Install
 
-<npm ci>
+```npm ci```
 
 ### Dev
 
-<npm run dev>
+```npm run dev```
 
 ### Build
 
-<npm run build>
+```npm run build```
