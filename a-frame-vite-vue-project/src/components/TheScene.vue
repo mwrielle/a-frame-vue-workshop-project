@@ -23,12 +23,14 @@ const allAssetsLoaded = ref(false);
       <a-asset-item id="purse" src="assets/coin_purse.glb"></a-asset-item>
     </a-assets>
 
+    <a-box color="red" position="0 0.5 -2"></a-box>
+
     <template v-if="allAssetsLoaded">
       <TheMainPlace :scale="scale" />
     </template>
 
     <TheNavMesh />
 
-    <TheCameraRig />
+    <TheCameraRig :loaded="allAssetsLoaded" />
   </a-scene>
 </template>

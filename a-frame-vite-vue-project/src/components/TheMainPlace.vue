@@ -13,8 +13,8 @@ defineProps({
   <a-entity
     gltf-model="#city"
     rotation="0 90 0"
-    position="0 -37 0"
-    scale="0.7 0.7 0.7"
+    position="-30 -12 0"
+    scale="0.25 0.25 0.25"
   >
   </a-entity>
 </template>

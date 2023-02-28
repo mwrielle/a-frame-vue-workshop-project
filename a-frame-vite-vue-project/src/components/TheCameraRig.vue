@@ -4,6 +4,10 @@ import "../aframe/hide-in-vr.js";
 import "../aframe/simple-navmesh-constraint.js";
 import "../aframe/blink-controls.js";
 import TheInventory from "./TheInventory.vue";
+
+defineProps({
+  loaded: Boolean,
+});
 </script>
 
 <template>
@@ -11,6 +15,7 @@ import TheInventory from "./TheInventory.vue";
     id="camera-rig"
     movement-controls="camera: #head;"
     disable-in-vr="component: movement-controls;"
+    position="0 0 0"
   >
     <a-entity
       wasd-controls="acceleration: 100"
@@ -19,7 +24,7 @@ import TheInventory from "./TheInventory.vue";
       simple-navmesh-constraint="navmesh: [data-role='nav-mesh']; height: 1.65;"
       disable-in-vr="component: simple-navmesh-constraint;"
       camera
-      position="100 1.65 0"
+      position="0 1.65 0"
     >
       <a-entity
         geometry="primitive: circle; radius: 0.0003;"
@@ -35,7 +40,7 @@ import TheInventory from "./TheInventory.vue";
     <a-entity
       color="lightgreen"
       id="hand-left"
-      oculus-touch-controls="hand: left"
+      hand-controls="hand: left"
       blink-controls="
           cameraRig: #camera-rig;
           teleportOrigin: #head;
@@ -43,13 +48,13 @@ import TheInventory from "./TheInventory.vue";
           snapTurn: false;
         "
     >
-      <TheInventory></TheInventory>
+      <TheInventory v-if="loaded"></TheInventory>
     </a-entity>
 
     <a-entity
       color="lightgreen"
       id="hand-right"
-      oculus-touch-controls="hand: right"
+      hand-controls="hand: right"
       laser-controls="hand: right"
       raycaster="far: 2; objects: [clickable]; showLine: true;"
     ></a-entity>
