@@ -1,12 +1,12 @@
 <script setup>
-  import '../aframe/teleport-camera-rig.js';
+import "../aframe/teleport-camera-rig.js";
 
-  defineProps({
-    x: {type: Number, default: 0},
-    y: {type: Number, default: 0},
-    z: {type: Number, default: 0},
-    label: {type: String, default: ''},
-  });
+defineProps({
+  x: { type: Number, default: 0 },
+  y: { type: Number, default: 0 },
+  z: { type: Number, default: 0 },
+  label: { type: String, default: "" },
+});
 </script>
 
 <template>
@@ -19,10 +19,6 @@
       z: ${z};
     `"
   >
-    <a-text
-      align="center"
-      :value="label"
-      position="0 1.2 0"
-    ></a-text>
+    <a-text align="center" :value="label" position="0 1.2 0"></a-text>
   </a-entity>
 </template>

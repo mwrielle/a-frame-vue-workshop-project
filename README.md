@@ -15,7 +15,7 @@ aframe-blink-controls: https://github.com/jure/aframe-blink-controls (MIT Licens
 simple-navmesh-constraint: https://github.com/AdaRoseCannon/aframe-xr-boilerplate (MIT Licence)
 Demo: https://onivers.com/aframe-vue-boilerplate/
 
-## Create a folder for your project and :
+## Create a folder for your project and:
 
 ### Clone (or fork, or download) from Chabloz
 
@@ -23,12 +23,12 @@ git clone https://github.com/Chabloz/a-frame-vite-vue-boilerplate.git .
 
 ### Install
 
-```npm ci```
+`npm ci`
 
 ### Dev
 
-```npm run dev```
+`npm run dev`
 
 ### Build
 
-```npm run build```
+`npm run build`
