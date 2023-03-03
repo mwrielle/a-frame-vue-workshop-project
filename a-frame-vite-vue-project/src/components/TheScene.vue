@@ -10,7 +10,6 @@ import "../aframe/teleport-camera-rig.js";
 
 defineProps({
   scale: Number,
-  overlaySelector: String,
 });
 
 const allAssetsLoaded = ref(false);
@@ -21,9 +20,8 @@ const allAssetsLoaded = ref(false);
     <a-assets @loaded="allAssetsLoaded = true">
       <a-asset-item id="city" src="assets/mafer_city.glb"></a-asset-item>
       <a-asset-item id="purse" src="assets/coin_purse.glb"></a-asset-item>
+      <a-asset-item id="coin" src="assets/coin.glb"></a-asset-item>
     </a-assets>
-
-    <a-box color="red" position="0 0.5 -2"></a-box>
 
     <template v-if="allAssetsLoaded">
       <TheMainPlace :scale="scale" />

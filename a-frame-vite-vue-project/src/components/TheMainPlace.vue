@@ -1,4 +1,6 @@
 <script setup>
+import TheCoins from "./TheCoins.vue";
+
 defineProps({
   scale: Number,
 });
@@ -17,4 +19,5 @@ defineProps({
     scale="0.25 0.25 0.25"
   >
   </a-entity>
+  <TheCoins></TheCoins>
 </template>

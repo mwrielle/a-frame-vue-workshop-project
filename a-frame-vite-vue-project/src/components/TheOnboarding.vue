@@ -92,7 +92,7 @@ function enterScene() {
             <a
               href="https://sketchfab.com/3d-models/coin-purse-03b55ef1a7ac4f89817f15a75acf35bc"
               target="_blank"
-              >Coind Purse
+              >Coin Purse
             </a>
           </dt>
           <dd>
@@ -103,6 +103,22 @@ function enterScene() {
             under
             <a
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              target="_blank"
+              >Creative Commons</a
+            >
+          </dd>
+
+          <dt>
+            <a href="https://skfb.ly/6Xqn8" target="_blank">Coin </a>
+          </dt>
+          <dd>
+            By
+            <a href="https://sketchfab.com/wearemonsters" target="_blank"
+              >Monster</a
+            >
+            under
+            <a
+              href="http://creativecommons.org/licenses/by/4.0/"
               target="_blank"
               >Creative Commons</a
             >

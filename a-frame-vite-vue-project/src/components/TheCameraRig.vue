@@ -18,7 +18,7 @@ defineProps({
     position="0 0 0"
   >
     <a-entity
-      wasd-controls="acceleration: 100"
+      wasd-controls="acceleration: 50"
       id="head"
       look-controls="pointerLockEnabled: true"
       simple-navmesh-constraint="navmesh: [data-role='nav-mesh']; height: 1.65;"
@@ -27,7 +27,7 @@ defineProps({
       position="0 1.65 0"
     >
       <a-entity
-        geometry="primitive: circle; radius: 0.0003;"
+        geometry="primitive: circle; radius: 0.0005;"
         material="shader: flat; color: white;"
         cursor
         raycaster="far: 2; objects: [clickable]; showLine: false;"
