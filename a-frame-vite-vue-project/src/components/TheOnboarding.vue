@@ -123,6 +123,20 @@ function enterScene() {
               >Creative Commons</a
             >
           </dd>
+
+          <dt>
+            <a href="https://skfb.ly/6Xqn8" target="_blank"
+              >Money sound effect
+            </a>
+          </dt>
+          <dd>
+            By LeMudCrab on
+            <a
+              href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=89563"
+              target="_blank"
+              >Pixabay</a
+            >
+          </dd>
         </dl>
       </div>
     </div>

@@ -1,21 +1,22 @@
 <script setup>
 import { ref } from "vue";
+import { nbCoins } from "../store.js";
 let coins = ref(0);
 </script>
 <template>
   <a-entity
     gltf-model="#purse"
     scale="0.005 0.005 0.005"
-    position="0 0 0"
+    position="0.03 0.01 0.02"
     rotation="-45 0 0"
   >
-    <a-text
-      value="0 coins"
-      color="darkblue"
-      rotation="45 0 0"
-      scale="50 50 50"
-      position="0 0.2 0"
-      align="center"
-    ></a-text>
   </a-entity>
+  <a-text
+    align="center"
+    :value="nbCoins + ' coins'"
+    color="#black"
+    scale="0.1 0.1 0.1"
+    position="0.05 0.1 -0.05"
+    rotation="-30 0 0"
+  ></a-text>
 </template>

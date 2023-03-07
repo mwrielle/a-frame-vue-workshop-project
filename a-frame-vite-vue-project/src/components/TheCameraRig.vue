@@ -27,6 +27,7 @@ defineProps({
       position="0 1.65 0"
     >
       <a-entity
+        id="reticule"
         geometry="primitive: circle; radius: 0.0005;"
         material="shader: flat; color: white;"
         cursor

@@ -21,6 +21,12 @@ const allAssetsLoaded = ref(false);
       <a-asset-item id="city" src="assets/mafer_city.glb"></a-asset-item>
       <a-asset-item id="purse" src="assets/coin_purse.glb"></a-asset-item>
       <a-asset-item id="coin" src="assets/coin.glb"></a-asset-item>
+      <a-asset-item
+        id="money"
+        response-type="arraybuffer"
+        src="assets/money-effect.mp3"
+        preload="auto"
+      ></a-asset-item>
     </a-assets>
 
     <template v-if="allAssetsLoaded">
