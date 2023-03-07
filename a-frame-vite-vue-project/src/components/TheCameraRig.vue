@@ -5,6 +5,7 @@ import "../aframe/simple-navmesh-constraint.js";
 import "../aframe/blink-controls.js";
 import TheInventory from "./TheInventory.vue";
 import { secondLeft } from "../store";
+import TheWoodSign from "./TheWoodSign.vue";
 defineProps({
   loaded: Boolean,
 });
@@ -50,6 +51,7 @@ defineProps({
         "
     >
       <TheInventory v-if="loaded"></TheInventory>
+      <a-text :value="nbCoins"></a-text>
     </a-entity>
 
     <a-entity

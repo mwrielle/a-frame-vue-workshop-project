@@ -29,6 +29,12 @@ const value = computed({
       <p>You collected {{ nbCoins }} within 1 minute, can you do better ?</p>
     </div>
   </div>
+
+  <div class="overlay" v-if="secondLeft != 0">
+    <div class="debug secondLeft">
+      <p>{{ secondLeft }} seconds left</p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -61,5 +67,10 @@ p {
 .finalScore {
   left: 30px;
   bottom: 30px;
+}
+
+.secondLeft {
+  left: 30px;
+  bottom: 100px;
 }
 </style>
