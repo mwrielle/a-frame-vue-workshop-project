@@ -84,7 +84,7 @@ function enterScene() {
             <a
               href="https://creativecommons.org/licenses/by/4.0/"
               target="_blank"
-              >Creative Commons</a
+              >Creative Commons Licences</a
             >
           </dd>
 
@@ -104,7 +104,7 @@ function enterScene() {
             <a
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
               target="_blank"
-              >Creative Commons</a
+              >Creative Commons Licences</a
             >
           </dd>
 
@@ -120,21 +120,49 @@ function enterScene() {
             <a
               href="http://creativecommons.org/licenses/by/4.0/"
               target="_blank"
-              >Creative Commons</a
+              >Creative Commons Licences</a
             >
           </dd>
 
           <dt>
-            <a href="https://skfb.ly/6Xqn8" target="_blank"
+            <a
+              href="https://orangefreesounds.com/mario-coin-sound/"
+              target="_blank"
               >Money sound effect
             </a>
           </dt>
           <dd>
-            By LeMudCrab on
+            By
             <a
-              href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=89563"
+              href="https://orangefreesounds.com/author/alexander/"
               target="_blank"
-              >Pixabay</a
+              >Alexander</a
+            >
+            under
+            <a
+              href="https://creativecommons.org/licenses/by-nc/4.0/"
+              target="_blank"
+              >Creative Commons Licences</a
+            >
+          </dd>
+
+          <dt>
+            <a
+              href="https://sketchfab.com/3d-models/wooden-sign-256975ecc4a947a79ffe2a0e963e8bbd"
+              target="_blank"
+              >Wooden sign
+            </a>
+          </dt>
+          <dd>
+            By
+            <a href="https://sketchfab.com/carlossamuelariza" target="_blank"
+              >Carlos</a
+            >
+            under
+            <a
+              href="http://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              >Creative Commons Licences</a
             >
           </dd>
         </dl>

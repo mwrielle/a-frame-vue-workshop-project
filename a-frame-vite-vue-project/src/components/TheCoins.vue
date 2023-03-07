@@ -32,7 +32,19 @@ import TheCoin from "./TheCoin.vue";
 
 //addCoins();
 
-const positions = ["0 0.4 -2", "0 0.4 -4"];
+const positions = [
+  "1.5 0.4 -4",
+  "-14.3 0.4 -10",
+  "-33 0.4 16",
+  "-90 0.4 52",
+  "-75 0.4 -14",
+  "-44 0.4 -11",
+  "-65 0.4 62.3",
+  "-34 0.4 70",
+  "-6 0.4 75",
+  "-4 0.4 87.2",
+  "-60 0.4 94.7",
+];
 </script>
 <!-- animation__open="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: easeInQuad" -->
 <template>

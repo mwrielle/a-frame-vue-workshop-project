@@ -1,4 +1,5 @@
 <script setup>
+import TheWoodSign from "./TheWoodSign.vue";
 import TheCoins from "./TheCoins.vue";
 
 defineProps({
@@ -19,5 +20,6 @@ defineProps({
     scale="0.25 0.25 0.25"
   >
   </a-entity>
+  <TheWoodSign></TheWoodSign>
   <TheCoins></TheCoins>
 </template>

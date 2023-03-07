@@ -4,7 +4,7 @@ import "../aframe/hide-in-vr.js";
 import "../aframe/simple-navmesh-constraint.js";
 import "../aframe/blink-controls.js";
 import TheInventory from "./TheInventory.vue";
-
+import { secondLeft } from "../store";
 defineProps({
   loaded: Boolean,
 });
@@ -58,6 +58,27 @@ defineProps({
       hand-controls="hand: right"
       laser-controls="hand: right"
       raycaster="far: 2; objects: [clickable]; showLine: true;"
-    ></a-entity>
+      ><a-cylinder
+        color="#211A1E"
+        height="0.02"
+        radius="0.04"
+        rotation="80 0 0"
+        position="0 0.01 0.1"
+      >
+        <a-circle
+          color="lightgrey"
+          radius="0.03"
+          rotation="0 90 0"
+          position="0.043 -0.0 0 "
+          ><a-text
+            :value="secondLeft"
+            align="center"
+            color="black"
+            rotation="0 0 90"
+            scale="0.2 0.2 0.2"
+          >
+          </a-text></a-circle
+      ></a-cylinder>
+    </a-entity>
   </a-entity>
 </template>

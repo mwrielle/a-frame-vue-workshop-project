@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from "vue";
+import { nbCoins, secondLeft } from "../store";
 
 const props = defineProps({
   modelValue: {
@@ -17,43 +18,48 @@ const value = computed({
 </script>
 
 <template>
-  <div>
-    <dl id="debug">
-      <dt>scale: {{ value }}</dt>
-      <input
-        v-model.number="value"
-        type="range"
-        min="0.2"
-        max="1"
-        step="0.05"
-      />
-    </dl>
+  <div class="overlay" v-if="secondLeft != 0">
+    <div class="debug duringGame">
+      <p>You have {{ nbCoins }} coin</p>
+    </div>
+  </div>
+
+  <div class="overlay" v-if="secondLeft == 0">
+    <div class="debug finalScore">
+      <p>You collected {{ nbCoins }} within 1 minute, can you do better ?</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-#overlay {
-  z-index: 1000;
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.overlay {
+  z-index: 10000;
 }
 :xr-overlay {
   z-index: inherit;
 } /* in AR z-index is not supported for AR dom overlay */
 
-#debug {
+.debug {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
-  background-color: black;
+  background-color: darkslategray;
   color: white;
   width: auto;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   font-family: monospace;
+  z-index: 10000;
 }
-dt {
-  margin-top: 0.5rem;
-  font-weight: bold;
+
+.duringGame {
+  left: 30px;
+  bottom: 30px;
 }
-dd {
-  margin-left: 0.5rem;
+
+.finalScore {
+  left: 30px;
+  bottom: 30px;
 }
 </style>

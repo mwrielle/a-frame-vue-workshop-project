@@ -4,12 +4,14 @@ import { ref } from "vue";
 import TheCameraRig from "./TheCameraRig.vue";
 import TheNavMesh from "./TheNavMesh.vue";
 import TheMainPlace from "./TheMainPlace.vue";
+import TheOverlay from "./TheOverlay.vue";
 
 import "../aframe/life-like-automaton.js";
 import "../aframe/teleport-camera-rig.js";
 
 defineProps({
   scale: Number,
+  overlaySelector: String,
 });
 
 const allAssetsLoaded = ref(false);
@@ -21,6 +23,7 @@ const allAssetsLoaded = ref(false);
       <a-asset-item id="city" src="assets/mafer_city.glb"></a-asset-item>
       <a-asset-item id="purse" src="assets/coin_purse.glb"></a-asset-item>
       <a-asset-item id="coin" src="assets/coin.glb"></a-asset-item>
+      <a-asset-item id="sign" src="assets/wooden_sign.glb"></a-asset-item>
       <a-asset-item
         id="money"
         response-type="arraybuffer"
@@ -36,5 +39,6 @@ const allAssetsLoaded = ref(false);
     <TheNavMesh />
 
     <TheCameraRig :loaded="allAssetsLoaded" />
+    <TheOverlay></TheOverlay>
   </a-scene>
 </template>
