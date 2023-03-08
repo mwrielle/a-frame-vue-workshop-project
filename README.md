@@ -8,7 +8,7 @@ Find coins in a small city, within X minutes.
 
 ## A Project for A-Frame 1.4, Vue 3.2 et Vite 4.1
 
-Included in the boilerplate:
+Included in the project:
 
 aframe-extras controls and animation-mixer: https://github.com/c-frame/aframe-extras (MIT License)
 aframe-blink-controls: https://github.com/jure/aframe-blink-controls (MIT License)
