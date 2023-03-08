@@ -32,13 +32,13 @@ const allAssetsLoaded = ref(false);
       ></a-asset-item>
     </a-assets>
 
-    <template v-if="allAssetsLoaded">
+    <template v-if="allAssetsLoaded" scale="0.8 0.8 10.8">
       <TheMainPlace :scale="scale" />
     </template>
 
     <TheNavMesh />
 
     <TheCameraRig :loaded="allAssetsLoaded" />
-    <TheOverlay></TheOverlay>
+    <TheOverlay></TheOverlay>åå
   </a-scene>
 </template>

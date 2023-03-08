@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from "vue";
-import { nbCoins, secondLeft } from "../store";
+import { nbCoins, secondLeft, showOnboarding } from "../store";
+import PortalTeleporter from "./PortalTeleporter.vue";
 
 const props = defineProps({
   modelValue: {
@@ -18,19 +19,25 @@ const value = computed({
 </script>
 
 <template>
-  <div class="overlay" v-if="secondLeft != 0">
+  <div class="overlay" v-if="secondLeft != 0 && showOnboarding == false">
     <div class="debug duringGame">
       <p>You have {{ nbCoins }} coin</p>
     </div>
   </div>
 
-  <div class="overlay" v-if="secondLeft == 0">
+  <div class="overlay" v-if="secondLeft == 0 && showOnboarding == false">
     <div class="debug finalScore">
       <p>You collected {{ nbCoins }} within 1 minute, can you do better ?</p>
     </div>
   </div>
 
-  <div class="overlay" v-if="secondLeft != 0">
+  <div class="overlay" v-if="secondLeft == 0 && showOnboarding == false">
+    <div class="debug restart">
+      <p>Go back to the wooden sign to restart the game</p>
+    </div>
+  </div>
+
+  <div class="overlay" v-if="secondLeft != 0 && showOnboarding == false">
     <div class="debug secondLeft">
       <p>{{ secondLeft }} seconds left</p>
     </div>
@@ -62,6 +69,11 @@ p {
 .duringGame {
   left: 30px;
   bottom: 30px;
+}
+
+.restart {
+  left: 30px;
+  bottom: 100px;
 }
 
 .finalScore {

@@ -1,11 +1,10 @@
 <script setup>
 import { ref } from "vue";
+import { showOnboarding } from "../store";
 
 defineProps({
   loaded: Boolean,
 });
-
-const showOnboarding = ref(true);
 
 function enterScene() {
   showOnboarding.value = false;

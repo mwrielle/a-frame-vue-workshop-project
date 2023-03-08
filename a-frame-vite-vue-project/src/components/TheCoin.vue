@@ -12,7 +12,7 @@ function collectMoney($event) {
   coin.removeAttribute("clickable");
 
   document
-    .querySelector("#right-hand")
+    .querySelector("#hand-right")
     ?.setAttribute("raycaster", "lineColor", "white");
   document
     .querySelector("#reticule")
@@ -27,7 +27,7 @@ const visibility = ref(true);
 </script>
 <template>
   <a-entity
-    v-if="secondLeft != 0"
+    v-if="secondLeft != 0 && secondLeft != 60"
     gltf-model="#coin"
     class="coin"
     clickable
@@ -35,7 +35,7 @@ const visibility = ref(true);
     rotation="0 0 0"
     @click="collectMoney($event)"
     :visible="visibility ? 'true' : 'false'"
-    animation__open="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear"
+    animation__open="property: rotation; to: 0 360 0; loop: true; dur: 1500; easing: linear"
     sound="src:#money; autoplay: false; volume: 1; on: click"
   ></a-entity>
 </template>

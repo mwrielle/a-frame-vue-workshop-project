@@ -5,7 +5,6 @@ import "../aframe/simple-navmesh-constraint.js";
 import "../aframe/blink-controls.js";
 import TheInventory from "./TheInventory.vue";
 import { secondLeft } from "../store";
-import TheWoodSign from "./TheWoodSign.vue";
 defineProps({
   loaded: Boolean,
 });
@@ -40,7 +39,6 @@ defineProps({
     </a-entity>
 
     <a-entity
-      color="lightgreen"
       id="hand-left"
       hand-controls="hand: left"
       blink-controls="
@@ -51,11 +49,9 @@ defineProps({
         "
     >
       <TheInventory v-if="loaded"></TheInventory>
-      <a-text :value="nbCoins"></a-text>
     </a-entity>
 
     <a-entity
-      color="lightgreen"
       id="hand-right"
       hand-controls="hand: right"
       laser-controls="hand: right"

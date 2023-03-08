@@ -5,7 +5,11 @@ import {
 
 export const nbCoins = ref(0);
 
-export const secondLeft = ref(10);
+export const secondLeft = ref(60);
+
+export const showOnboarding = ref(true);
+
+export const gameover = ref(false);
 
 
 watch(nbCoins, () => console.log(nbCoins.value));
