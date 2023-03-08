@@ -13,3 +13,5 @@ Included in the boilerplate:
 aframe-extras controls and animation-mixer: https://github.com/c-frame/aframe-extras (MIT License)
 aframe-blink-controls: https://github.com/jure/aframe-blink-controls (MIT License)
 simple-navmesh-constraint: https://github.com/AdaRoseCannon/aframe-xr-boilerplate (MIT Licence)
+
+Other sources on the onboarding page of the project : vr49.onivers.com/marielle
